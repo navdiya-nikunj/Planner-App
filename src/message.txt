@@ -1,0 +1,135 @@
+<html>
+ <head>
+   <style>
+     table,
+      td,
+      th {
+         border: 1px solid rgb(104, 104, 104);
+      }
+      table {
+        border-collapse: collapse;
+        background-color: #c2fbfb;
+      }
+      th,
+      td {
+        padding: 7px;
+      }
+      td {
+        text-align: center;
+      }
+      th {
+        text-align: left;
+        color: #000;
+      }
+      h3 {
+        text-align: center;
+      }
+       .dark-bg {
+        background-color: #98e9e9;
+      }
+      hr{
+       background-color: #00abab;
+       height: 2px;
+       width: 80%;
+      }
+      span{
+       line-height: 1.5;
+      }
+      footer{
+       text-align: center;
+      }
+    </style>
+ </head>
+ <body>
+  <img
+     class="max-width"
+     border="0"
+     style="
+      display: block;
+      margin: 0 auto;
+      color: #000000;
+      text-decoration: none;
+      font-family: Helvetica, arial,
+        sans-serif;
+      font-size: 16px;
+      width: 25%;
+      height: 25%
+      "
+    src="{{branding.logo}}"
+    alt=""
+    width="200"
+    data-responsive="true"
+    data-proportionally-constrained="false"
+  />
+  <br/>
+  <hr/>
+  <h3><i>Hello {{username}}</i></h3>
+  <div>{{{body}}}</div>
+  <table>
+      <tr>
+        <th class="dark-bg">
+          Timings
+        </th>
+        <td class="dark-bg"><b>{{Time1}}</b></td>
+        <td class="dark-bg"><b>{{Time2}}</b></td>
+        <td class="dark-bg"><b>{{Time3}}</b></td>
+        <td class="dark-bg"><b>{{Time4}}</b></td>
+        <td class="dark-bg"><b>{{Time5}}</b></td>
+        <td class="dark-bg"><b>{{Time6}}</b></td>
+      </tr>
+      <tr>
+        <th class="dark-bg">Temperature</th>
+        <td>{{t1}}</td>
+        <td>{{t2}}</td>
+        <td>{{t3}}</td>
+        <td>{{t4}}</td>
+        <td>{{t5}}</td>
+        <td>{{t6}}</td>
+      </tr>
+      <tr>
+        <th class="dark-bg">Humidity</th>
+        <td>{{h1}}</td>
+        <td>{{h2}}</td>
+        <td>{{h3}}</td>
+        <td>{{h4}}</td>
+        <td>{{h5}}</td>
+        <td>{{h6}}</td>
+      </tr>
+      <tr>
+        <th class="dark-bg">Pressure</th>
+        <td>{{p1}}</td>
+        <td>{{p2}}</td>
+        <td>{{p3}}</td>
+        <td>{{p4}}</td>
+        <td>{{p5}}</td>
+        <td>{{p6}}</td>
+      </tr>
+      <tr>
+        <th class="dark-bg">Wind Speed</th>
+        <td>{{w1}}</td>
+        <td>{{w2}}</td>
+        <td>{{w3}}</td>
+        <td>{{w4}}</td>
+        <td>{{w5}}</td>
+        <td>{{w6}}</td>
+      </tr>
+      <tr>
+        <th class="dark-bg">Wind Degree</th>
+        <td>{{wd1}}</td>
+        <td>{{wd2}}</td>
+        <td>{{wd3}}</td>
+        <td>{{wd4}}</td>
+        <td>{{wd5}}</td>
+        <td>{{wd6}}</td>
+      </tr>
+    </table>
+    <br/>
+    <span>Regards, <br/><i>SentinelSky</i></span>
+    <br/>
+    <br/>
+    <hr/>
+    <footer>
+     <p>If you want to unsubscribe, please click <a href="https://chat.openai.com/">here</a>.</p>
+    </footer>
+ </body>
+</html>
